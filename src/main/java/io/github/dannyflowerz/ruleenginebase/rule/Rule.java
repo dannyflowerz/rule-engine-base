@@ -1,4 +1,4 @@
-package io.github.dannyflowerz.ruleengineexample.rule;
+package io.github.dannyflowerz.ruleenginebase.rule;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;

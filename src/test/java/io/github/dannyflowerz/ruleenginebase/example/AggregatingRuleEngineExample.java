@@ -1,6 +1,6 @@
-package io.github.dannyflowerz.ruleengineexample.example;
+package io.github.dannyflowerz.ruleenginebase.example;
 
-import io.github.dannyflowerz.ruleengineexample.engine.AggregatingRuleEngine;
+import io.github.dannyflowerz.ruleenginebase.engine.AggregatingRuleEngine;
 
 import java.util.List;
 import java.util.stream.Collectors;

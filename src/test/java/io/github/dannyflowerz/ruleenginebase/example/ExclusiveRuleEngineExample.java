@@ -1,6 +1,6 @@
-package io.github.dannyflowerz.ruleengineexample.example;
+package io.github.dannyflowerz.ruleenginebase.example;
 
-import io.github.dannyflowerz.ruleengineexample.engine.ExclusiveRuleEngine;
+import io.github.dannyflowerz.ruleenginebase.engine.ExclusiveRuleEngine;
 
 public class ExclusiveRuleEngineExample extends ExclusiveRuleEngine<Input, Decision> {
 	

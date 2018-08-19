@@ -1,6 +1,6 @@
-package io.github.dannyflowerz.ruleengineexample.example;
+package io.github.dannyflowerz.ruleenginebase.example;
 
-import io.github.dannyflowerz.ruleengineexample.rule.Rule;
+import io.github.dannyflowerz.ruleenginebase.rule.Rule;
 
 public class BarIsNotGoodRule extends Rule<Input, Decision> {
 

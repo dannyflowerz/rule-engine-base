@@ -1,13 +1,13 @@
-package io.github.dannyflowerz.ruleengineexample;
+package io.github.dannyflowerz.ruleenginebase;
 
-import io.github.dannyflowerz.ruleengineexample.example.AggregatingRuleEngineExample;
-import io.github.dannyflowerz.ruleengineexample.example.Decision;
-import io.github.dannyflowerz.ruleengineexample.example.Input;
+import io.github.dannyflowerz.ruleenginebase.example.AggregatingRuleEngineExample;
+import io.github.dannyflowerz.ruleenginebase.example.Decision;
+import io.github.dannyflowerz.ruleenginebase.example.Input;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class AggregatingDemo {
+public class AggregatingDemoTest {
 
     private AggregatingRuleEngineExample aggregating = new AggregatingRuleEngineExample(true);
 

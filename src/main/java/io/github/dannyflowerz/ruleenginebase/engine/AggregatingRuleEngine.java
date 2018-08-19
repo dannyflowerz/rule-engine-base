@@ -1,6 +1,6 @@
-package io.github.dannyflowerz.ruleengineexample.engine;
+package io.github.dannyflowerz.ruleenginebase.engine;
 
-import io.github.dannyflowerz.ruleengineexample.rule.Rule;
+import io.github.dannyflowerz.ruleenginebase.rule.Rule;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package io.github.dannyflowerz.ruleengineexample.example;
+package io.github.dannyflowerz.ruleenginebase.example;
 
 import lombok.Builder;
 import lombok.Getter;

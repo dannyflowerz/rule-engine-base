@@ -1,13 +1,13 @@
-package io.github.dannyflowerz.ruleengineexample;
+package io.github.dannyflowerz.ruleenginebase;
 
-import io.github.dannyflowerz.ruleengineexample.example.ExclusiveRuleEngineExample;
-import io.github.dannyflowerz.ruleengineexample.example.Input;
+import io.github.dannyflowerz.ruleenginebase.example.ExclusiveRuleEngineExample;
+import io.github.dannyflowerz.ruleenginebase.example.Input;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class ExclusiveDemo {
+public class ExclusiveDemoTest {
 
     private ExclusiveRuleEngineExample exclusive = new ExclusiveRuleEngineExample(true, false);
     private ExclusiveRuleEngineExample exclusiveMessedUp = new ExclusiveRuleEngineExample(true, true);
