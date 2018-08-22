@@ -19,7 +19,7 @@ class ExclusiveDemoTest {
     }
 
     @Test
-    @DisplayName("Should decide not accepted fo BAR")
+    @DisplayName("Should decide not accepted for BAR")
     void evaluateBar() {
         assertFalse(exclusive.evaluate(new Input(Input.Discriminator.BAR)).get().isAccepted());
     }
