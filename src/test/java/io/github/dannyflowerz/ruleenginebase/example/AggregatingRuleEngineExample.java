@@ -9,9 +9,9 @@ public class AggregatingRuleEngineExample extends AggregatingRuleEngine<Input, D
 
     public AggregatingRuleEngineExample(boolean enabled) {
         super(enabled);
-        rules.add(new FooIsGoodRule(true));
-        rules.add(new BarIsNotGoodRule(true));
-        rules.add(new BarIsBadRule(true));
+        getRules().add(new FooIsGoodRule(true));
+        getRules().add(new BarIsNotGoodRule(true));
+        getRules().add(new BarIsBadRule(true));
     }
 
     @Override

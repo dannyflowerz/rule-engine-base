@@ -1,8 +1,5 @@
 package io.github.dannyflowerz.ruleenginebase.engine;
 
-import io.github.dannyflowerz.ruleenginebase.rule.Rule;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -14,18 +11,15 @@ import java.util.stream.Collectors;
  * @param <I> input type
  * @param <O> output type representing the decision
  */
-public abstract class AggregatingRuleEngine<I, O> extends Rule<I, O> {
-
-    protected List<Rule<I, O>> rules;
+public abstract class AggregatingRuleEngine<I, O> extends RuleEngine<I, O> {
 
     protected AggregatingRuleEngine(boolean enabled) {
         super(enabled);
-        rules = new ArrayList<>();
     }
 
     @Override
     protected O doEvaluate(I input) {
-        List<O> evaluatedRules = rules.stream()
+        List<O> evaluatedRules = getRules().stream()
                 .map(rule -> rule.evaluate(input))
                 .filter(Optional::isPresent)
                 .map(Optional::get)
@@ -41,4 +35,3 @@ public abstract class AggregatingRuleEngine<I, O> extends Rule<I, O> {
     protected abstract O aggregate(List<O> decisions);
 
 }
-

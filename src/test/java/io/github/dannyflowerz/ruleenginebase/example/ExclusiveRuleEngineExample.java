@@ -6,10 +6,10 @@ public class ExclusiveRuleEngineExample extends ExclusiveRuleEngine<Input, Decis
 	
 	public ExclusiveRuleEngineExample(boolean enabled, boolean createMessedUpInstance) {
 		super(enabled);
-		rules.add(new FooIsGoodRule(true));
-		rules.add(new BarIsNotGoodRule(true));
+		getRules().add(new FooIsGoodRule(true));
+		getRules().add(new BarIsNotGoodRule(true));
 		if (createMessedUpInstance) {
-            rules.add(new BarIsBadRule(true));
+            getRules().add(new BarIsBadRule(true));
         }
 	}
 
